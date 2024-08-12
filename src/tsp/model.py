@@ -33,6 +33,17 @@ class Model:
         col1 = self._random.integers(0, self.size[1] + 1, size=n)
         self.nodes = np.column_stack((col0, col1))
 
+    def get_nodes_count(self) -> int:
+        return self.nodes.shape[0]
+
+    def get_distance_matrix(self) -> np.ndarray:
+        v = self.get_nodes_count()
+        d = np.zeros((v, v))
+        for i in range(v):
+            for j in range(v):
+                d[i, j] = np.linalg.norm(self.nodes[i] - self.nodes[j])
+        return d
+
     @property
     def size(self) -> tuple[int, int]:
         return self._size

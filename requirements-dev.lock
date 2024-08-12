@@ -23,6 +23,8 @@ packaging==24.1
     # via pytest
 pluggy==1.5.0
     # via pytest
+pulp==2.9.0
+    # via tsp
 pytest==8.3.2
 ruff==0.5.7
 tomli==2.0.1

@@ -12,3 +12,5 @@
 -e file:.
 numpy==2.0.1
     # via tsp
+pulp==2.9.0
+    # via tsp

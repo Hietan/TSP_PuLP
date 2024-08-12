@@ -7,6 +7,7 @@ authors = [
 ]
 dependencies = [
     "numpy>=2.0.1",
+    "pulp>=2.9.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
