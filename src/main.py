@@ -19,6 +19,8 @@ def main() -> None:
 
     logging.debug(answer)
 
+    model.plot(answer)
+
 
 if __name__ == "__main__":
     main()

@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "numpy>=2.0.1",
     "pulp>=2.9.0",
+    "matplotlib>=3.9.1.post1",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

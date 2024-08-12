@@ -10,23 +10,44 @@
 #   universal: false
 
 -e file:.
+contourpy==1.2.1
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
 exceptiongroup==1.2.2
     # via pytest
+fonttools==4.53.1
+    # via matplotlib
 iniconfig==2.0.0
     # via pytest
+kiwisolver==1.4.5
+    # via matplotlib
+matplotlib==3.9.1.post1
+    # via tsp
 mypy==1.11.1
 mypy-extensions==1.0.0
     # via mypy
 numpy==2.0.1
+    # via contourpy
+    # via matplotlib
     # via tsp
 packaging==24.1
+    # via matplotlib
     # via pytest
+pillow==10.4.0
+    # via matplotlib
 pluggy==1.5.0
     # via pytest
 pulp==2.9.0
     # via tsp
+pyparsing==3.1.2
+    # via matplotlib
 pytest==8.3.2
+python-dateutil==2.9.0.post0
+    # via matplotlib
 ruff==0.5.7
+six==1.16.0
+    # via python-dateutil
 tomli==2.0.1
     # via mypy
     # via pytest
