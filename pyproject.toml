@@ -16,11 +16,15 @@ requires-python = ">= 3.8"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.mypy]
+ignore_missing_imports = true
+
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = [
 	"COM812",
 	"D", # Ignore docstrings
+	"INP001",
 	"ISC001", 
 ]
 
