@@ -5,13 +5,23 @@ description = "Add your description here"
 authors = [
     { name = "Hietan", email = "hietan622@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "numpy>=2.0.1",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+	"COM812",
+	"D", # Ignore docstrings
+	"ISC001", 
+]
 
 [tool.rye]
 managed = true
@@ -22,6 +32,7 @@ dev-dependencies = [
 ]
 
 [tool.rye.scripts]
+main = "python src/main.py"
 lint = "ruff check ."
 fmt = "ruff format ."
 
