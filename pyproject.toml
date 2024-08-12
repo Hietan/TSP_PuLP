@@ -39,8 +39,13 @@ dev-dependencies = [
 
 [tool.rye.scripts]
 main = "python src/main.py"
-lint = "ruff check ."
-fmt = "ruff format ."
+lint = "ruff check src/"
+lint_fix = "ruff check src/ --fix"
+lint_fix_diff = "ruff check src/ --fix --diff"
+fmt = "ruff format src/"
+fmt_check = "ruff format src/ --check"
+fmt_diff = "ruff format src/ --diff"
+mypy = "mypy src/"
 
 [tool.hatch.metadata]
 allow-direct-references = true
